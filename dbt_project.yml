@@ -36,6 +36,9 @@ models:
     +materialized: table
     #example:
     #  +materialized: view
+    stg:
+      +materialized: view
+      schema: stg
 
 seeds:
   jaffle_shop:
