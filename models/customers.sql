@@ -29,6 +29,7 @@ customer_orders as (
 final as (
 
     select
+        --CURRENT_TIMESTAMP as load_date,
         customers.customer_id,
         customers.first_name,
         customers.last_name,
