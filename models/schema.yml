@@ -1,5 +1,24 @@
 version: 2
 
+vars:
+  my_list_of_tables:
+    - name: tbl_red
+    - name: tbl_blue
+    - name: tbl_green
+
+sources:
+  - name: shopify_account_1
+    database: RAW
+    tables:
+      - name: orders
+      - name: location
+  
+  - name: shopify_account_2
+    database: RAW
+    tables:
+      - name: orders
+      - name: location
+
 models:
   - name: customers
     columns:
